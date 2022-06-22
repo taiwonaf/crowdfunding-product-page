@@ -13,6 +13,115 @@
     box-sizing: border-box;
 }
 
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li {
+    margin-left: 40px;
+    list-style: none;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
 body {
     font-family: 'Commissioner', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1500px;
+    /* width: 100%; */
+    margin: 0px auto;
+}
+
+header {
+    padding: 50px 20px 0px 20px;
+    background-image: url("./images/image-hero-desktop.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+}
+
+header::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+main {
+    max-width: 900px;
+    margin: 0px auto;
+    border-radius: 10px;
+    position: relative;
+    top: -120px;
+    background-color: white;
+}
+
+section {
+    padding: 50px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+.mastercraft {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.first {
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+p {
+    color: var(--Dark-gray);
+    font-weight: 500;
+    font-size: 18px;
+    /* margin-bottom: 20px; */
+}
+
+.bookmark {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.bookmark a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--Dark-cyan);
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
+.bookmark .bookmarked .circle {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50px;
+    background-color: rgba(128, 128, 128, 0.2);
+    padding: 0px 30px 0px 0px;
+}
+
+.circle p {
+    margin: 0px 0px 0px 20px;
+    color: var(--Black);
+    font-size: 16px;
+    font-weight: 700;
 }
