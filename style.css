@@ -125,3 +125,33 @@ p {
     font-size: 16px;
     font-weight: 700;
 }
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
+.stat {
+    text-align: left;
+    border-right: 1px solid rgba(128, 128, 128, 0.4);
+}
+
+.stats > div:nth-child(3) {
+    border: none;
+}
+
+.progress {
+    margin-top: 40px;
+    width: 100%;
+    height: 12px;
+    border-radius: 30px;
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.progress-line {
+    height: 100%;
+    width: 80%;
+    border-radius: 50px;
+    background-color: var(--Moderate-cyan);
+}
