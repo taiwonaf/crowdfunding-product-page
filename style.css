@@ -241,9 +241,9 @@ h2 {
 
 /* success modal */
 
-/* html {
-    overflow: hidden;
-} */
+html {
+    /* overflow: hidden; */
+}
 
 .success {
     position: absolute;
@@ -290,3 +290,168 @@ h2 {
     font-weight: 700;
 }
 
+/* selection modal */
+
+/* html {
+    overflow: scroll;
+    height: 1400px;
+} */
+
+.selection-modal {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    height: 1400px;
+    width: 100%;
+    overflow: hidden;
+    /* border-radius: 10px; */
+}
+
+.selection-modal .container {
+    background-color: white;
+    max-width: 730px;
+    padding: 3.125rem;
+    border-radius: 10px;
+}
+
+.selection-modal .container p {
+    font-size: 16px;
+    line-height: 1.8;
+    /* font-weight: 300; */
+    text-align: justify;
+}
+
+.pledges {
+    margin-top: 40px;
+}
+
+.pledge {
+    border: 2px solid rgba(128, 128, 128, 0.1);
+    margin-bottom: 25px;
+    padding: 1.875rem 1.5625rem;
+    display: flex;
+    border-radius: 10px;
+}
+
+.pledge .radio {
+    margin-right: 25px;
+}
+
+.pledge .right .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.pledge .right .top .top-right {
+    display: flex;
+}
+
+.pledge .right .top .top-right h2 {
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+.pledge .right .top .top-left span {
+    margin-right: 10px;
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+}
+.pledge .right .top .top-left span:nth-child(2) {
+    margin-right: 10px;
+    font-size: 18px;
+    color: var(--Moderate-cyan);
+    font-weight: 700;
+}
+
+.pledge .right .top .top-left span:hover {
+    margin-right: 10px;
+    font-size: 18px;
+    color: var(--Moderate-cyan);
+    font-weight: 700;
+}
+
+.pledge .right .top .top-left {
+    align-self: flex-start;
+}
+
+.pledge .radio input {
+    transform: scale(1.5);
+}
+
+.pledge:active {
+    border: 2px solid var(--Moderate-cyan);
+}
+
+/*  */
+
+.visible {
+    border: 2px solid var(--Moderate-cyan);
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.visible .hidden {
+    padding: 0rem 1.5625rem 1.875rem 1.5625rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.visible .hidden .input input {
+    width: 100px;
+    border-radius: 50px;
+    border: 2px solid var(--Moderate-cyan);
+    padding: 18px 34px;
+    color: black;
+    font-weight: 700;
+    outline:  none;
+    font-size: 16px;
+}
+
+.visible .hidden .input input::before {
+    content: "";
+    height: 40px;
+    width: 40px;
+    background-color: red;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+.visible .hidden .input a {
+    display: inline-block;
+    padding: 18px 20px;
+    background-color: var(--Dark-cyan);
+    color: white;
+    font-weight: 700;
+    border-radius: 50px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.visible .hidden .input {
+    display: flex;
+}
+
+.visible .hidden .input .input-num {
+    position: relative;
+}
+.visible .hidden .input .input-num span {
+    position: absolute;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.2);
+    left: 20px;
+    top: 18px;
+    font-size: 16px;
+}
