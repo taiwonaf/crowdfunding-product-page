@@ -477,4 +477,23 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
-p#bookma
+p#bookmarked-text {
+    display: none;
+}
+
+.active-bookmark p#bookmarked-text {
+    display: block;
+    color: var(--Dark-cyan);
+}
+
+.active-bookmark p#bookmark-text {
+    display: none;
+}
+
+.active-bookmark svg circle {
+    fill: var(--Dark-cyan);
+}
+
+.active-bookmark svg path {
+    fill: white;
+}
