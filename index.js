@@ -13,21 +13,12 @@ const cancelSelect = document.getElementById("cancel");
 
 cancelSelect.onclick = () => {
     selectionModal.style.display = "none";
-    window.onclick = function(event) {
-        if (event.target === selectionModal) {
-            htmlDoc.style.overflow = "visible";
-            selectionModal.style.display = "none";
-        }
-    }
 }
 
 visibleClasses.forEach((visibleClass) => {
     visibleClass.addEventListener("click", (e) => {
         visibleClass.classList.toggle("activate-hidden");
         console.log(e.target);
-        // if (e.target == toggleBtn) {
-        //     visibleClass.classList.toggle("activate-hidden");
-        // }
     })
 })
 
@@ -58,17 +49,14 @@ backThis.addEventListener("click", () => {
     htmlDoc.style.height = "1400px";
     docBody.style.height = "1400px"
     docBody.style.overflow = "hidden"
+
+    window.onclick = function(event) {
+        if (event.target === selectionModal) {
+            htmlDoc.style.overflow = "visible";
+            docBody.style.overflow = "visible";
+            docBody.style.height = "auto";
+            htmlDoc.style.height = "auto";
+            selectionModal.style.display = "none";
+        }
+    }
 })
-
-
-// const visibleClass = document.getElementById("visible");
-// const bambooRadio = document.getElementById("bamboo")
-
-// function visibleToggle() {
-//     visibleClass.classList.toggle("active");
-// }
-
-// function toggleRadio() {
-//     visibleToggle();
-// }
-
