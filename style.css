@@ -365,6 +365,10 @@ body {
     margin-bottom: 0px;
 }
 
+#visible > div.pledge > div > p {
+    margin-left: 45px;
+}
+
 .pledge .right .top .top-left span {
     margin-right: 10px;
     font-size: 18px;
@@ -396,14 +400,10 @@ body {
 
 /*  */
 
-.visible.active {
+.visible.activate-hidden {
     border: 2px solid var(--Moderate-cyan);
     margin-bottom: 30px;
     border-radius: 10px;
-}
-
-.visible.active .hidden {
-    display: flex;
 }
 
 .visible .hidden {
@@ -448,13 +448,14 @@ input[type=number]::-webkit-outer-spin-button {
     text-decoration: none;
 }
 
-.visible .hidden .input {
+.hidden .input {
     display: flex;
 }
 
 .visible .hidden .input .input-num {
     position: relative;
 }
+
 .visible .hidden .input .input-num span {
     position: absolute;
     font-weight: 700;
@@ -501,4 +502,53 @@ p#bookmarked-text {
 .active-bookmark {
     background-color: hsla(176, 50%, 47%, 0.2);
     border-radius: 50px;
+}
+
+.pledge .right .top .top-left span:nth-child(1) .radio-btn {
+    height: 20px;
+    width: 20px;
+    border: 2px solid var(--Moderate-cyan);
+    margin: 0px 25px -3px 0px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+#selection-modal > div > div > div.pledge > div > div > div > span.radio-btn {
+    height: 20px;
+    width: 20px;
+    border: 2px solid var(--Moderate-cyan);
+    margin: 0px 25px -3px 0px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+#selection-modal > div > div > div.pledge > div > p {
+    margin-left: 45px;
+}
+
+/* .radio-btn.active {
+
+} */
+
+.activate-hidden .hidden {
+    display: flex;
+}
+
+.radio-btn {
+    position: relative;
+}
+
+.activate-hidden .radio-btn #inner-dot {
+    background-color: var(--Dark-cyan);
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    border-radius: 13px;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.activate-hidden #toggle {
+    color: var(--Moderate-cyan);
 }

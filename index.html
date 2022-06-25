@@ -39,7 +39,7 @@
         <h1>Mastercraft Bamboo Monitor Riser</h1>
         <p>  A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
         <div class="bookmark">
-          <a href="#" >Back this project</a>
+          <a href="#" id="back-this">Back this project</a>
           <div class="bookmarked" id="bookmarked">
             <div class="circle">
               <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#2F2F2F" cx="28" cy="28" r="28"/><path fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z"/></g></svg>              <p id="bookmark-text">Bookmark</p>
@@ -150,19 +150,20 @@
     </div>
   </div>
 <!-- selection modal -->
-  <div class="selection-modal">
+  <div class="selection-modal" id="selection-modal">
     <div class="container">
       <h2 id="cancel">X</h2>
       <h2>Back this project</h2>
       <p>want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
       <div class="pledges">
         <div class="pledge">
-          <div class="radio">
+          <!-- <div class="radio">
             <input type="radio">
-          </div>
+          </div> -->
           <div class="right">
             <div class="top">
               <div class="top-left">
+                <span class="radio-btn"></span>
                 <span>Pledge with no Reward</span>
               </div>
             </div>
@@ -174,13 +175,16 @@
         </div>
         <div id="visible" class="visible">
           <div class="pledge">
-            <div class="radio">
+            <!-- <div class="radio">
               <input onclick="toggleRadio()" id="bamboo" type="radio">
-            </div>
+            </div> -->
             <div class="right">
               <div class="top">
                 <div class="top-left">
-                  <span>
+                  <span id="toggle">
+                    <span class="radio-btn">
+                      <span id="inner-dot"></span>
+                    </span>
                     Bamboo Stand
                   </span>
                   <span>
@@ -211,13 +215,16 @@
         </div>
         <div id="visible" class="visible">
           <div class="pledge">
-            <div class="radio">
+            <!-- <div class="radio">
               <input onclick="toggleRadio()" id="bamboo" type="radio">
-            </div>
+            </div> -->
             <div class="right">
               <div class="top">
                 <div class="top-left">
-                  <span>
+                  <span id="toggle">
+                    <span class="radio-btn">
+                      <span id="inner-dot"></span>
+                    </span>
                     Black Edition Stand
                   </span>
                   <span>
@@ -248,16 +255,20 @@
         </div>
         <div id="visible" class="visible">
           <div class="pledge">
-            <div class="radio">
+            <!-- <div class="radio">
               <input onclick="toggleRadio()" id="bamboo" type="radio">
-            </div>
+            </div> -->
             <div class="right">
               <div class="top">
                 <div class="top-left">
-                  <span>
+                  <span id="toggle">
+                    <span class="radio-btn">
+                      <span id="inner-dot"></span>
+                    </span>
                     Mahogany Special Edition
                   </span>
                   <span>
+                    <span class="radio-btn"></span>
                     Pledge %200 or more
                   </span>
                 </div>
