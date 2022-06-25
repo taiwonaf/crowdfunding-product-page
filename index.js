@@ -1,10 +1,20 @@
-const student1 = {
-    name: "taiwo",
-    age: 40,
-    isAlive: true,
-    greetings: function greet() {
-        console.log(this)
-    },
+const bookMarked = document.getElementById("bookmarked");
+const bookText = document.getElementById("bookmark-text");
+
+bookMarked.onclick = () => {
+    bookMarked.classList.toggle("active-bookmark");
 }
 
-console.log(student1.greetings());
+
+
+// const visibleClass = document.getElementById("visible");
+// const bambooRadio = document.getElementById("bamboo")
+
+// function visibleToggle() {
+//     visibleClass.classList.toggle("active");
+// }
+
+// function toggleRadio() {
+//     visibleToggle();
+// }
+

@@ -40,10 +40,11 @@
         <p>  A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
         <div class="bookmark">
           <a href="#">Back this project</a>
-          <div class="bookmarked">
+          <div class="bookmarked" id="bookmarked">
             <div class="circle">
               <img src="./images/icon-bookmark.svg" alt="">
-              <p>Bookmark</p>
+              <p id="bookmark-text">Bookmark</p>
+              <p id="bookmarked-text">Bookmark</p>
             </div>
           </div>
         </div>
@@ -152,6 +153,7 @@
 <!-- selection modal -->
   <div class="selection-modal">
     <div class="container">
+      <h2 id="cancel">X</h2>
       <h2>Back this project</h2>
       <p>want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
       <div class="pledges">
@@ -171,10 +173,10 @@
             </p>
           </div>
         </div>
-        <div class="visible">
+        <div id="visible" class="visible">
           <div class="pledge">
             <div class="radio">
-              <input type="radio">
+              <input onclick="toggleRadio()" id="bamboo" type="radio">
             </div>
             <div class="right">
               <div class="top">
@@ -208,54 +210,78 @@
             </div>
           </div>
         </div>
-        <div class="pledge">
-          <div class="radio">
-            <input type="radio">
-          </div>
-          <div class="right">
-            <div class="top">
-              <div class="top-left">
-                <span>
-                  Black Edition Stand
-                </span>
-                <span>
-                  Pledge %75 or more
-                </span>
-              </div>
-              <div class="top-right">
-                <h2>64</h2>
-                <p>left</p>
-              </div>
+        <div id="visible" class="visible">
+          <div class="pledge">
+            <div class="radio">
+              <input onclick="toggleRadio()" id="bamboo" type="radio">
             </div>
-            <p>
-              You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
-              member list. Shipping is included.
-            </p>
+            <div class="right">
+              <div class="top">
+                <div class="top-left">
+                  <span>
+                    Black Edition Stand
+                  </span>
+                  <span>
+                    Pledge %75 or more
+                  </span>
+                </div>
+                <div class="top-right">
+                  <h2>64</h2>
+                  <p>left</p>
+                </div>
+              </div>
+              <p>
+                You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
+                member list. Shipping is included.
+              </p>
+            </div>
+          </div>
+          <div class="hidden">
+            <p>Enter your pledge</p>
+            <div class="input">
+              <div class="input-num">
+                <input type="number">
+                <span>$</span>
+              </div>
+              <a href="#">Continue</a>
+            </div>
           </div>
         </div>
-        <div class="pledge">
-          <div class="radio">
-            <input type="radio">
-          </div>
-          <div class="right">
-            <div class="top">
-              <div class="top-left">
-                <span>
-                  Mahogany Special Edition
-                </span>
-                <span>
-                  Pledge $200 or more
-                </span>
-              </div>
-              <div class="top-right">
-                <h2>0</h2>
-                <p>left</p>
-              </div>
+        <div id="visible" class="visible">
+          <div class="pledge">
+            <div class="radio">
+              <input onclick="toggleRadio()" id="bamboo" type="radio">
             </div>
-            <p>
-              You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
-              to our Backer member list. Shipping is included.
-            </p>
+            <div class="right">
+              <div class="top">
+                <div class="top-left">
+                  <span>
+                    Mahogany Special Edition
+                  </span>
+                  <span>
+                    Pledge %200 or more
+                  </span>
+                </div>
+                <div class="top-right">
+                  <h2>0</h2>
+                  <p>left</p>
+                </div>
+              </div>
+              <p>
+                You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+                to our Backer member list. Shipping is included.
+              </p>
+            </div>
+          </div>
+          <div class="hidden">
+            <p>Enter your pledge</p>
+            <div class="input">
+              <div class="input-num">
+                <input type="number">
+                <span>$</span>
+              </div>
+              <a href="#">Continue</a>
+            </div>
           </div>
         </div>
       </div>
