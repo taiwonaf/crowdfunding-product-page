@@ -10,6 +10,17 @@ const docBody = document.body;
 const visibleClasses = document.querySelectorAll(".visible");
 const toggleBtn = document.getElementById("toggle");
 const cancelSelect = document.getElementById("cancel");
+const hamOpen = document.getElementById("ham-open");
+const hamClose = document.getElementById("ham-close");
+const navItems = document.getElementById("nav-items");
+const hamBurger = document.querySelector(".hamburger");
+const overLay = document.getElementById("over");
+
+hamBurger.onclick = () => {
+    docBody.classList.toggle("activate-over");
+    navItems.classList.toggle("activate-nav");
+    hamBurger.classList.toggle("activate-hamburger");
+}
 
 cancelSelect.onclick = () => {
     selectionModal.style.display = "none";

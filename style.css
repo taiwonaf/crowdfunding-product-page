@@ -548,9 +548,92 @@ p#bookmarked-text {
     margin: 0px 20px;
 }
 
+.hamburger {
+    display: none;
+    z-index: 1000000;
+}
+
+.mobile-overlay {
+    display: none;
+}
+
 @media (max-width: 780px) {
     #bookmark-text, #bookmarked-text {
         display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger .ham-close {
+        display: none;
+    }
+
+    header {
+        position: relative;
+        padding-top: 30px;
+    }
+
+    .nav-items.activate-nav {
+        display: block;
+        position: absolute;
+        background-color: white;
+        top: 80px;
+        left: 20px;
+        right: 20px;
+        bottom: 0;
+        border-radius: 10px;
+        /* padding: 0px 20px; */
+        z-index: 1000;
+        overflow: hidden;
+    }
+
+    .activate-over header {
+        z-index: 9;
+    }
+
+    .activate-over .mobile-overlay{
+        display: block;
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.284);
+        z-index: 8;
+    }
+
+    .hamburger.activate-hamburger .ham-close {
+        display: block;
+    }
+
+    .hamburger.activate-hamburger .ham-open {
+        display: none;
+    }
+
+    .nav-items.activate-nav ul li a {
+        color: black;
+        padding: 25px 20px;
+        display: inline-block;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.101);
+        width: 100%;
+        font-weight: 700;
+
+    }
+
+    .nav-items.activate-nav ul li a:hover {
+        background-color: var(--Moderate-cyan);
+    }
+
+    #nav-items > ul > li:nth-child(3) > a {
+        border-bottom: none;
+    }
+
+    .nav-items.activate-nav ul li {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .nav-items.activate-nav ul {
+        flex-direction: column;
     }
 
     .bookmark .bookmarked .circle {
@@ -783,5 +866,9 @@ p#bookmarked-text {
 
     #selection-modal > div > div > div.pledge > div > div > div > span:nth-child(2) {
         margin-left: 0px;
+    }
+
+    .active-bookmark p#bookmark-text, .active-bookmark p#bookmarked-text {
+        display: none;
     }
 }
